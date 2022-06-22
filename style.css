@@ -1,0 +1,125 @@
+*{margin: 0;padding: 0;}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(img/mortal-kombat-11-logo-1920x1080.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.container{
+    width: 60%;
+    height: 90%;
+
+    border-radius: 20px;
+
+    padding: 10px;
+
+    display: grid;
+    grid-template-areas:
+    "item-1 item-1 item-2 item-2 item-2 item-2 item-3 item-3"
+    "item-1 item-1 item-4 item-4 item-4 item-4 item-3 item-3"
+    "item-1 item-1 item-5 item-5 item-5 item-5 item-3 item-3"
+    "item-1 item-1 item-6 item-6 item-7 item-8 item-9 item-9"
+    "item-10 item-10 item-6 item-6 item-7 item-8 item-9 item-9"
+    "item-10 item-10 item-11 item-11 item-12 item-13 item-14 item-14"
+    "item-10 item-10 item-15 item-15 item-12 item-13 item-14 item-14" ;
+    gap: 10px;
+
+    /* From https://css.glass */
+    background: rgba(255, 129, 15, 0.49);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: 1px solid rgba(255, 129, 15, 0.3);
+}
+
+.container div{
+    border-radius: 15px;
+    background-color: #264653;
+    border: 4px solid;  
+    background-size:100% 100%;
+    animation: bordes 1s infinite alternate;
+    transition: transform 1.5s;
+}
+
+.container div:hover{
+    transform: rotateY(180deg);
+}
+
+.item-1{
+    grid-area: item-1;
+    background: url(img/bad.jpg) no-repeat; 
+}
+.item-2{
+    grid-area: item-2;
+    background: url(img/sub-scorp.jpeg) no-repeat;
+    
+}
+.item-3{
+    grid-area: item-3;
+    background: url(img/kunLao.jpg) no-repeat;
+}
+.item-4{
+    grid-area: item-4;
+    background: url(img/dragon.jpg) no-repeat;   
+}
+.item-5{
+    grid-area: item-5;
+    background: url(img/baraka.jpg) no-repeat;
+}
+.item-6{
+    grid-area: item-6;
+    background: url(img/raiden.jpg) no-repeat;
+        
+}
+.item-7{
+    grid-area: item-7;
+    background: url(img/raid.jpg) no-repeat;   ;
+}
+.item-8{
+    grid-area: item-8;
+    background: url(img/sub.jpg) no-repeat;   ;
+}
+.item-9{
+    grid-area: item-9;
+    background: url(img/subCerjpg.jpg) no-repeat;    
+}
+.item-10{
+    grid-area: item-10;
+    background: url(img/reptilejpg.jpg) no-repeat;   
+}
+.item-11{
+    grid-area: item-11;
+    background: url(img/rep.jpg) no-repeat;   ;
+}
+.item-12{
+    grid-area: item-12;
+    background: url(img/Dragon\ 4.jpg) no-repeat;   
+}
+.item-13{
+    grid-area: item-13;
+    background: url(img/scor.jpg) no-repeat;   ;
+}
+.item-14{
+    grid-area: item-14;
+    background: url(img/scorpio.jpg) no-repeat;   
+
+}
+.item-15{
+    grid-area: item-15;
+    background: url(img/grupal.jpg) no-repeat;   
+}
+
+@keyframes bordes{
+    From{
+        border-color: #ff4800;
+    }to{
+        border-color: #ffc812;
+    }
+}
